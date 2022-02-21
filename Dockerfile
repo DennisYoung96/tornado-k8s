@@ -1,5 +1,6 @@
 FROM nbgallery/jupyter-alpine:latest
 
+RUN pip3 install --upgrade pip --user
 RUN pip3 install kubernetes
 RUN pip3 install paramiko
 RUN pip3 install tornado
